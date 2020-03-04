@@ -371,7 +371,7 @@ func setupKernelTunables(option KernelTunableBehavior) error {
 			}
 		}
 	}
-	return utilerrors.NewAggregate(errList)
+	return nil
 }
 
 func (cm *containerManagerImpl) setupNode(activePods ActivePodsFunc) error {
